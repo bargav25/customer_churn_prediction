@@ -1,0 +1,56 @@
+data_ingestion:
+  bucket_name: "churn_bucket_cc"
+  file_name: "BankChurners.csv"
+  test_size: 0.2
+  random_state: 42
+
+data_processing:
+  drop_columns:
+    - CLIENTNUM
+    - Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1
+    - Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2
+    - Avg_Open_To_Buy
+
+  target_column: "Attrition_Flag"
+
+  num_top_features: 10
+
+  ordinal_encoding:
+    Education_Level:
+      - Unknown
+      - Uneducated
+      - High School
+      - College
+      - Graduate
+      - Post-Graduate
+      - Doctorate
+
+    Marital_Status:
+      - Unknown
+      - Single
+      - Divorced
+      - Married
+
+    Income_Category:
+      - Unknown
+      - Less than $40K
+      - $40K - $60K
+      - $60K - $80K
+      - $80K - $120K
+      - $120K +
+
+    Card_Category:
+      - Blue
+      - Silver
+      - Gold
+      - Platinum
+
+  binary_encoding:
+    Attrition_Flag:
+      Attrited Customer: 1
+      Existing Customer: 0
+
+    Gender:
+      F: 1
+      M: 0
+

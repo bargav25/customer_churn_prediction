@@ -1,0 +1,122 @@
+2025-03-22 18:31:09,510 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 18:31:09,511 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 18:31:09,524 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 18:31:09,528 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 18:31:09,528 - INFO - Data Preprocessing started
+2025-03-22 18:31:09,528 - INFO - Dropping columns
+2025-03-22 18:31:09,528 - ERROR - Error in data preprocessing: 'drop_columns'
+2025-03-22 18:31:09,528 - ERROR - CustomException: Error in /Users/bargav/Onion/mlops/churn_pred/src/data_preprocessing.py, line 34: Error in data preprocessing: 'drop_columns'
+2025-03-22 18:31:50,467 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 18:31:50,467 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 18:31:50,478 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 18:31:50,481 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 18:31:50,481 - INFO - Data Preprocessing started
+2025-03-22 18:31:50,481 - INFO - Dropping columns
+2025-03-22 18:31:50,483 - INFO - Converting categorical columns
+2025-03-22 18:31:50,485 - INFO - Binary encoding columns
+2025-03-22 18:31:50,488 - INFO - Data Preprocessing completed
+2025-03-22 18:31:50,488 - INFO - Data Preprocessing started
+2025-03-22 18:31:50,488 - INFO - Dropping columns
+2025-03-22 18:31:50,489 - INFO - Converting categorical columns
+2025-03-22 18:31:50,489 - INFO - Binary encoding columns
+2025-03-22 18:31:50,490 - INFO - Data Preprocessing completed
+2025-03-22 18:31:50,491 - INFO - Data Balancing started
+2025-03-22 18:31:50,491 - ERROR - Error in data balancing: 'target_column'
+2025-03-22 18:31:50,491 - ERROR - CustomException: Error in /Users/bargav/Onion/mlops/churn_pred/src/data_preprocessing.py, line 60: Error in data balancing: 'target_column'
+2025-03-22 18:32:16,958 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 18:32:16,958 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 18:32:16,969 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 18:32:16,972 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 18:32:16,972 - INFO - Data Preprocessing started
+2025-03-22 18:32:16,972 - INFO - Dropping columns
+2025-03-22 18:32:16,976 - INFO - Converting categorical columns
+2025-03-22 18:32:16,981 - INFO - Binary encoding columns
+2025-03-22 18:32:16,983 - INFO - Data Preprocessing completed
+2025-03-22 18:32:16,983 - INFO - Data Preprocessing started
+2025-03-22 18:32:16,983 - INFO - Dropping columns
+2025-03-22 18:32:16,984 - INFO - Converting categorical columns
+2025-03-22 18:32:16,984 - INFO - Binary encoding columns
+2025-03-22 18:32:16,985 - INFO - Data Preprocessing completed
+2025-03-22 18:32:16,985 - INFO - Data Balancing started
+2025-03-22 18:32:16,985 - ERROR - Error in data balancing: 'target_column'
+2025-03-22 18:32:16,985 - ERROR - CustomException: Error in /Users/bargav/Onion/mlops/churn_pred/src/data_preprocessing.py, line 60: Error in data balancing: 'target_column'
+2025-03-22 18:59:24,283 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 18:59:24,283 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 18:59:24,294 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 18:59:24,297 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 18:59:24,297 - INFO - Data Preprocessing started
+2025-03-22 18:59:24,297 - INFO - Dropping columns
+2025-03-22 18:59:24,299 - INFO - Converting categorical columns
+2025-03-22 18:59:24,301 - INFO - Binary encoding columns
+2025-03-22 18:59:24,303 - INFO - Data Preprocessing completed
+2025-03-22 18:59:24,303 - INFO - Data Preprocessing started
+2025-03-22 18:59:24,303 - INFO - Dropping columns
+2025-03-22 18:59:24,303 - INFO - Converting categorical columns
+2025-03-22 18:59:24,304 - INFO - Binary encoding columns
+2025-03-22 18:59:24,305 - INFO - Data Preprocessing completed
+2025-03-22 18:59:24,305 - INFO - Data Balancing started
+2025-03-22 18:59:24,347 - INFO - Data Balancing completed
+2025-03-22 18:59:25,575 - INFO - Selected top 10 features successfully
+2025-03-22 18:59:25,608 - INFO - Data saved successfully at artifacts/processed/train.csv
+2025-03-22 18:59:25,612 - INFO - Data saved successfully at artifacts/processed/test.csv
+2025-03-22 18:59:25,612 - INFO - Data Processing completed
+2025-03-22 19:00:19,957 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 19:00:19,958 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 19:00:19,969 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 19:00:19,973 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 19:00:19,973 - INFO - Data Preprocessing started
+2025-03-22 19:00:19,973 - INFO - Dropping columns
+2025-03-22 19:00:19,976 - INFO - Converting categorical columns
+2025-03-22 19:00:19,978 - INFO - Binary encoding columns
+2025-03-22 19:00:19,981 - INFO - Data Preprocessing completed
+2025-03-22 19:00:19,981 - INFO - Data Preprocessing started
+2025-03-22 19:00:19,981 - INFO - Dropping columns
+2025-03-22 19:00:19,981 - INFO - Converting categorical columns
+2025-03-22 19:00:19,982 - INFO - Binary encoding columns
+2025-03-22 19:00:19,983 - INFO - Data Preprocessing completed
+2025-03-22 19:00:19,983 - INFO - Data Balancing started
+2025-03-22 19:00:20,020 - INFO - Data Balancing completed
+2025-03-22 19:00:21,252 - INFO - Selected top 10 features successfully
+2025-03-22 19:00:21,284 - INFO - Data saved successfully at artifacts/processed/train.csv
+2025-03-22 19:00:21,288 - INFO - Data saved successfully at artifacts/processed/test.csv
+2025-03-22 19:00:21,288 - INFO - Data Processing completed
+2025-03-22 19:00:48,058 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 19:00:48,058 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 19:00:48,073 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 19:00:48,079 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 19:00:48,079 - INFO - Data Preprocessing started
+2025-03-22 19:00:48,079 - INFO - Dropping columns
+2025-03-22 19:00:48,081 - INFO - Converting categorical columns
+2025-03-22 19:00:48,083 - INFO - Binary encoding columns
+2025-03-22 19:00:48,086 - INFO - Data Preprocessing completed
+2025-03-22 19:00:48,086 - INFO - Data Preprocessing started
+2025-03-22 19:00:48,086 - INFO - Dropping columns
+2025-03-22 19:00:48,086 - INFO - Converting categorical columns
+2025-03-22 19:00:48,087 - INFO - Binary encoding columns
+2025-03-22 19:00:48,088 - INFO - Data Preprocessing completed
+2025-03-22 19:00:48,088 - INFO - Data Balancing started
+2025-03-22 19:00:48,118 - INFO - Data Balancing completed
+2025-03-22 19:00:49,336 - INFO - Selected top 10 features successfully
+2025-03-22 19:00:49,367 - INFO - Data saved successfully at artifacts/processed/train.csv
+2025-03-22 19:00:49,372 - INFO - Data saved successfully at artifacts/processed/test.csv
+2025-03-22 19:00:49,372 - INFO - Data Processing completed
+2025-03-22 19:01:13,904 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-22 19:01:13,904 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-22 19:01:13,916 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-22 19:01:13,920 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-22 19:01:13,920 - INFO - Data Preprocessing started
+2025-03-22 19:01:13,920 - INFO - Dropping columns
+2025-03-22 19:01:13,924 - INFO - Converting categorical columns
+2025-03-22 19:01:13,926 - INFO - Binary encoding columns
+2025-03-22 19:01:13,929 - INFO - Data Preprocessing completed
+2025-03-22 19:01:13,929 - INFO - Data Preprocessing started
+2025-03-22 19:01:13,930 - INFO - Dropping columns
+2025-03-22 19:01:13,930 - INFO - Converting categorical columns
+2025-03-22 19:01:13,931 - INFO - Binary encoding columns
+2025-03-22 19:01:13,931 - INFO - Data Preprocessing completed
+2025-03-22 19:01:13,931 - INFO - Data Balancing started
+2025-03-22 19:01:13,964 - INFO - Data Balancing completed
+2025-03-22 19:01:15,194 - INFO - Selected top 10 features successfully
+2025-03-22 19:01:15,227 - INFO - Data saved successfully at artifacts/processed/train.csv
+2025-03-22 19:01:15,233 - INFO - Data saved successfully at artifacts/processed/test.csv
+2025-03-22 19:01:15,233 - INFO - Data Processing completed

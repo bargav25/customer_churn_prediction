@@ -1,0 +1,174 @@
+2025-03-25 20:11:34,087 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:11:34,088 - INFO - Loading data
+2025-03-25 20:11:34,099 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-25 20:11:34,102 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-25 20:11:34,105 - ERROR - Error occurred while loading data: 'target_col'
+2025-03-25 20:11:34,105 - ERROR - Error occurred in training pipeline: Error in /Users/bargav/Onion/mlops/churn_pred/src/model_training.py, line 43: Error occurred while loading data: 'target_col'
+2025-03-25 20:11:58,501 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:11:58,501 - INFO - Loading data
+2025-03-25 20:11:58,513 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-25 20:11:58,516 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-25 20:11:58,520 - INFO - Data loaded successfully
+2025-03-25 20:11:58,520 - INFO - Initializing the model
+2025-03-25 20:11:58,520 - INFO - Starting hyperparameter tuning
+2025-03-25 20:12:01,306 - ERROR - Error occurred while training model: 
+All the 30 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+30 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/sklearn.py", line 1560, in fit
+    super().fit(
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 3656, in __init__
+    train_set.construct()
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 2590, in construct
+    self._lazy_init(
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 2123, in _lazy_init
+    data, feature_name, categorical_feature, self.pandas_categorical = _data_from_pandas(
+                                                                       ^^^^^^^^^^^^^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 868, in _data_from_pandas
+    _pandas_to_numpy(data, target_dtype=target_dtype),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 814, in _pandas_to_numpy
+    _check_for_bad_pandas_dtypes(data.dtypes)
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 805, in _check_for_bad_pandas_dtypes
+    raise ValueError(
+ValueError: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Gender: object, Education_Level: object, Marital_Status: object, Income_Category: object, Card_Category: object
+
+2025-03-25 20:12:01,306 - ERROR - Error occurred in training pipeline: Error in /Users/bargav/Onion/mlops/churn_pred/src/model_training.py, line 66: Error occurred while training model: 
+All the 30 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+30 fits failed with the following error:
+Traceback (most recent call last):
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/sklearn.py", line 1560, in fit
+    super().fit(
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/sklearn.py", line 1049, in fit
+    self._Booster = train(
+                    ^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 3656, in __init__
+    train_set.construct()
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 2590, in construct
+    self._lazy_init(
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 2123, in _lazy_init
+    data, feature_name, categorical_feature, self.pandas_categorical = _data_from_pandas(
+                                                                       ^^^^^^^^^^^^^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 868, in _data_from_pandas
+    _pandas_to_numpy(data, target_dtype=target_dtype),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 814, in _pandas_to_numpy
+    _check_for_bad_pandas_dtypes(data.dtypes)
+  File "/Users/bargav/Onion/mlops/churn_pred/venv/lib/python3.11/site-packages/lightgbm/basic.py", line 805, in _check_for_bad_pandas_dtypes
+    raise ValueError(
+ValueError: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: Gender: object, Education_Level: object, Marital_Status: object, Income_Category: object, Card_Category: object
+
+2025-03-25 20:12:37,739 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:12:37,740 - INFO - Loading data
+2025-03-25 20:12:37,748 - INFO - Data loaded successfully from path: artifacts/processed/train.csv
+2025-03-25 20:12:37,749 - INFO - Data loaded successfully from path: artifacts/processed/test.csv
+2025-03-25 20:12:37,751 - INFO - Data loaded successfully
+2025-03-25 20:12:37,751 - INFO - Initializing the model
+2025-03-25 20:12:37,751 - INFO - Starting hyperparameter tuning
+2025-03-25 20:12:57,924 - INFO - Hyperparameter tuning completed
+2025-03-25 20:12:57,924 - INFO - Best parameters: 
+2025-03-25 20:12:57,924 - INFO - Evaluating model
+2025-03-25 20:12:57,934 - INFO - Model evaluation completed
+2025-03-25 20:12:57,934 - INFO - Accuracy: 0.9590325765054294
+2025-03-25 20:12:57,934 - INFO - Precision: 0.8388888888888889
+2025-03-25 20:12:57,934 - INFO - Recall: 0.9235474006116208
+2025-03-25 20:12:57,934 - INFO - F1: 0.8791848617176128
+2025-03-25 20:12:57,934 - INFO - Saving model
+2025-03-25 20:29:29,342 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:29:30,101 - INFO - Loading data
+2025-03-25 20:29:30,112 - INFO - Data loaded successfully from path: artifacts/processed/train.csv
+2025-03-25 20:29:30,113 - INFO - Data loaded successfully from path: artifacts/processed/test.csv
+2025-03-25 20:29:30,116 - INFO - Data loaded successfully
+2025-03-25 20:29:30,116 - INFO - Initializing the model
+2025-03-25 20:29:30,116 - INFO - Starting hyperparameter tuning
+2025-03-25 20:29:52,766 - INFO - Hyperparameter tuning completed
+2025-03-25 20:29:52,766 - INFO - Best parameters: 
+2025-03-25 20:29:52,766 - INFO - Evaluating model
+2025-03-25 20:29:52,775 - INFO - Model evaluation completed
+2025-03-25 20:29:52,776 - INFO - Accuracy: 0.9590325765054294
+2025-03-25 20:29:52,776 - INFO - Precision: 0.8388888888888889
+2025-03-25 20:29:52,776 - INFO - Recall: 0.9235474006116208
+2025-03-25 20:29:52,776 - INFO - F1: 0.8791848617176128
+2025-03-25 20:29:52,776 - INFO - Saving model
+2025-03-25 20:32:42,700 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:32:43,040 - INFO - Loading data
+2025-03-25 20:32:43,050 - INFO - Data loaded successfully from path: artifacts/processed/train.csv
+2025-03-25 20:32:43,051 - INFO - Data loaded successfully from path: artifacts/processed/test.csv
+2025-03-25 20:32:43,054 - INFO - Data loaded successfully
+2025-03-25 20:32:43,054 - INFO - Initializing the model
+2025-03-25 20:32:43,054 - INFO - Starting hyperparameter tuning
+2025-03-25 20:33:06,495 - INFO - Hyperparameter tuning completed
+2025-03-25 20:33:06,496 - INFO - Best parameters: 
+2025-03-25 20:33:06,496 - INFO - Evaluating model
+2025-03-25 20:33:06,505 - INFO - Model evaluation completed
+2025-03-25 20:33:06,505 - INFO - Accuracy: 0.9590325765054294
+2025-03-25 20:33:06,506 - INFO - Precision: 0.8388888888888889
+2025-03-25 20:33:06,506 - INFO - Recall: 0.9235474006116208
+2025-03-25 20:33:06,506 - INFO - F1: 0.8791848617176128
+2025-03-25 20:33:06,506 - INFO - Saving model
+2025-03-25 20:46:43,337 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:46:43,337 - INFO - Data Ingestion start with the bucket churn_bucket_cc and file BankChurners.csv
+2025-03-25 20:46:53,813 - INFO - Data downloaded from GCS to artifacts/raw/data.csv
+2025-03-25 20:46:53,903 - INFO - Data split into train and test and saved at artifacts/raw/train.csv and artifacts/raw/test.csv
+2025-03-25 20:46:53,904 - INFO - Data Ingestion completed
+2025-03-25 20:46:53,906 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:46:53,906 - INFO - Data Processing started with train path: artifacts/raw/train.csv, test path: artifacts/raw/test.csv and processed dir: artifacts/processed
+2025-03-25 20:46:53,913 - INFO - Data loaded successfully from path: artifacts/raw/train.csv
+2025-03-25 20:46:53,916 - INFO - Data loaded successfully from path: artifacts/raw/test.csv
+2025-03-25 20:46:53,916 - INFO - Data Preprocessing started
+2025-03-25 20:46:53,916 - INFO - Dropping columns
+2025-03-25 20:46:53,917 - INFO - Converting categorical columns
+2025-03-25 20:46:53,919 - INFO - Binary encoding columns
+2025-03-25 20:46:53,922 - INFO - Data Preprocessing completed
+2025-03-25 20:46:53,922 - INFO - Data Preprocessing started
+2025-03-25 20:46:53,922 - INFO - Dropping columns
+2025-03-25 20:46:53,922 - INFO - Converting categorical columns
+2025-03-25 20:46:53,923 - INFO - Binary encoding columns
+2025-03-25 20:46:53,924 - INFO - Data Preprocessing completed
+2025-03-25 20:46:53,924 - INFO - Data Balancing started
+2025-03-25 20:46:53,996 - INFO - Data Balancing completed
+2025-03-25 20:46:55,243 - INFO - Selected top 10 features successfully
+2025-03-25 20:46:55,276 - INFO - Data saved successfully at artifacts/processed/train.csv
+2025-03-25 20:46:55,280 - INFO - Data saved successfully at artifacts/processed/test.csv
+2025-03-25 20:46:55,280 - INFO - Data Processing completed
+2025-03-25 20:46:55,281 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-25 20:46:55,501 - INFO - Loading data
+2025-03-25 20:46:55,507 - INFO - Data loaded successfully from path: artifacts/processed/train.csv
+2025-03-25 20:46:55,508 - INFO - Data loaded successfully from path: artifacts/processed/test.csv
+2025-03-25 20:46:55,509 - INFO - Data loaded successfully
+2025-03-25 20:46:55,509 - INFO - Initializing the model
+2025-03-25 20:46:55,509 - INFO - Starting hyperparameter tuning
+2025-03-25 20:47:14,510 - INFO - Hyperparameter tuning completed
+2025-03-25 20:47:14,511 - INFO - Best parameters: 
+2025-03-25 20:47:14,511 - INFO - Evaluating model
+2025-03-25 20:47:14,520 - INFO - Model evaluation completed
+2025-03-25 20:47:14,520 - INFO - Accuracy: 0.9590325765054294
+2025-03-25 20:47:14,520 - INFO - Precision: 0.8388888888888889
+2025-03-25 20:47:14,520 - INFO - Recall: 0.9235474006116208
+2025-03-25 20:47:14,520 - INFO - F1: 0.8791848617176128
+2025-03-25 20:47:14,520 - INFO - Saving model

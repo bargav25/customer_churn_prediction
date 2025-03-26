@@ -1,0 +1,5 @@
+2025-03-21 17:27:02,185 - INFO - Config file loaded successfully from path: config/config.yaml
+2025-03-21 17:27:02,186 - INFO - Data Ingestion start with the bucket churn_bucket_cc and file BankChurners.csv
+2025-03-21 17:27:02,626 - INFO - Data downloaded from GCS to artifacts/raw/data.csv
+2025-03-21 17:27:02,709 - INFO - Data split into train and test and saved at artifacts/raw/train.csv and artifacts/raw/test.csv
+2025-03-21 17:27:02,709 - INFO - Data Ingestion completed
