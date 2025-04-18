@@ -49,8 +49,11 @@ pipeline{
                         gcloud config set project ${GCP_PROJECT}
                         gcloud auth configure-docker --quiet
 
-                        docker build -t gcr.io/${GCP_PROJECT}/customer_churn_prediction:latest .
-                        docker push gcr.io/${GCP_PROJECT}/customer_churn_prediction:latest
+                        docker buildx create --use || true
+
+                        docker buildx build --platform linux/amd64 \
+                            -t gcr.io/${GCP_PROJECT}/customer_churn_prediction:latest \
+                            --push .
                         
                         '''
 
