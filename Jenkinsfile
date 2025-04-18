@@ -73,10 +73,10 @@ pipeline{
                         gcloud config set project ${GCP_PROJECT}
 
                         gcloud run deploy customer-churn-prediction \
-                            --image gcr.io/${GCP_PROJECT}/customer_churn_prediction:latest \
-                            --platform managed \
-                            --region us-central1 \
-                            --allow-unauthenticated \
+                            --image=gcr.io/${GCP_PROJECT}/customer_churn_prediction:latest \
+                            --platform=managed \
+                            --region=us-central1 \
+                            --allow-unauthenticated
             
                         '''
 
